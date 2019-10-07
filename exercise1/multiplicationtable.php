@@ -1,5 +1,3 @@
-<!-- helloWorld.php -->
-
 <?php
    echo "<p>Multiplication Table!</p>";
 ?>
