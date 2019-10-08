@@ -7,6 +7,7 @@
         <link href="style.css"
             rel="stylesheet"
             type="text/css"/>
+						<script src="formChecker.js"></script>
 
 
 		<title> Pokemon Card Web Store </title>
@@ -53,7 +54,6 @@
 					</p>
 
 
-
         <br><br><br>
 
 
@@ -70,17 +70,18 @@
 
 
 							Username:  <input type = "text" class = "username" id = "username"><br>
-							Password:&nbsp&nbsp<input type = "text" class = "password" id = "password"><br><br>
+							Password:&nbsp&nbsp<input type = "password" name = "password" class = "password" id = "password"><br><br>
 
 
 
-							<input type="submit" value = "Submit"">
-								<br><br><br><br><br><br><br>
+							<input type="submit" value = "Submit">
+
 					</form>
+					<button type = "button" onclick="clearInput();">Clear</button>
+						<br><br><br><br><br><br><br>
 
 					</div>
 
-					<script src="formChecker.js"></script>
 
 
 

@@ -183,3 +183,5 @@ a:hover
     background-color: white;
     color: darkblue;
 }
+
+td.empty { border-top:none; }
