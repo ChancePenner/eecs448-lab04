@@ -29,6 +29,7 @@ else if($shippingType == "$5.00 three day")
 echo "  <link href='style.css'
       rel='stylesheet'
       type='text/css'/>";
+
 echo "<div class ='white'>";
 
 echo "<h1 class='receiptTitle'>Thank you for your purchase!</h1><br><br>";
@@ -132,8 +133,7 @@ echo "</td>";
 echo "<td colspan = '2'>";
 echo $shippingType;
 echo "</td>";
-
-
+//////////////////
 
 // <td class="empty"> </td>
 //
@@ -144,11 +144,22 @@ echo "</td>";
 
 
 echo "<td>";
-echo "$" . "" . (5*$heracrossAmount + 100*$charizardAmount + 20*$tyranitarAmount + $shippingAmount);
+echo "$" . "" . ($shippingAmount);
 echo "</td>";
 
 echo "</tr>";
 
+echo "<tr>";
+
+echo "<td colspan = '3'>";
+echo "Total Cost";
+echo "</td>";
+
+echo "<td>";
+echo "$" . "" . (5*$heracrossAmount + 100*$charizardAmount + 20*$tyranitarAmount + $shippingAmount);
+echo "</td>";
+
+echo "</tr>";
 
 echo "</table>";
 echo "</div>";
