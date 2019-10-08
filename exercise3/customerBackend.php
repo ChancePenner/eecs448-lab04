@@ -25,11 +25,22 @@ else if($shippingType == "$5.00 three day")
   $shippingAmount = 5;
 }
 
-echo "Thank you for your purchase!<br><br>";
-echo "Your password is: " . $password . "<br>";
-echo "Below is the receipt of your transaction:<br><br><br>";
+// echo '<link href="/style.css" media="screen" rel="stylesheet" type="text/css" />';	 //link the style.css
+echo "  <link href='style.css'
+      rel='stylesheet'
+      type='text/css'/>";
+echo "<div class ='white'>";
 
-echo "<table border =\"1\">";
+echo "<h1 class='receiptTitle'>Thank you for your purchase!</h1><br><br>";
+echo "<p class = 'receipt'>";
+echo "Your password is: " . $password . "<br>";
+
+echo "Below is the receipt of your transaction:<br><br><br>";
+echo "</p>";
+
+echo "<div class='table'>";
+
+echo "<table class='tableClass' border =\"1\">";
 
 echo "<tr>";
 
@@ -139,8 +150,12 @@ echo "</td>";
 echo "</tr>";
 
 
-
 echo "</table>";
+echo "</div>";
+
+echo "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
+
+echo "</div>";
 
 
  ?>

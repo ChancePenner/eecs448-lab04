@@ -184,4 +184,31 @@ a:hover
     color: darkblue;
 }
 
-td.empty { border-top:none; }
+table th,table td{
+
+ text-align:center;
+  border-color: purple;
+  background-color: limegreen;
+  color: black;
+  font-size: 30;
+  width:1%;
+}
+
+
+h1.receiptTitle
+{
+  text-align: center;
+}
+
+p.receipt
+{
+  font-size: 20;
+  text-align: center;
+  align-items: center;
+}
+
+div.table
+{
+  margin-left: auto;
+  margin-right: auto;
+}
