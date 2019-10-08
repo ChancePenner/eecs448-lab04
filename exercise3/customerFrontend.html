@@ -8,7 +8,8 @@
             rel="stylesheet"
             type="text/css"/>
 
-		<title> Pokémon Card Web Store </title>
+
+		<title> Pokemon Card Web Store </title>
 
 	</head>
 
@@ -20,27 +21,66 @@
 
         <!-- <img src="white.png" id="white" width=400 height=2000> -->
 
-        <h1 class="WebStoreTitle"> <b>Welcome to the Pokémon Card Web Store</b> </h1>
+        <h1 class="WebStoreTitle"> <b>Welcome to the Pokemon Card Web Store</b> </h1>
 
 
         <p class = "formBody">
-          <img src="images/charizardCard.jpg" width="300" height="300" class="charizard">
+          <img src="images/charizardCard.jpg" width="180" height="180" class="charizard">
 
-          <img src="images/tyranitarCard.jpg" width="300" height="300" class="tyranitar">
+          <img src="images/tyranitarCard.jpg" width="180" height="180" class="tyranitar">
 
-          <img src="images/heracrossCard.png" width="300" height="300" class="heracross">
+          <img src="images/heracrossCard.png" width="180" height="180" class="heracross">
+				</p>
+
+				<div class = "charizardText">
+					<span style = "color:Red"> Charizard: $100 </span>
+					</div>
+
+				<div class = "tyranitarText">
+					<span style = "color:Green"> Tyranitar: $20</span>
+					</div>
+
+				<div class = "heracrossText">
+					<span style = "color:Blue"> Heracross: $5</span><br>
+					</div>
+					<br>
+
+					<p class = "inputBody">
+						<!-- MAKE SURE THESE ARE INTEGERS -->
+					<input type = "text" class = "charizardAmount" id = "charizardAmount">
+					<input type = "text" class = "tyranitarAmount" id = "tyranitarAmount">
+					<input type = "text" class = "heracrossAmount" id = "heracrossAmount">
+					</p>
 
 
-          <br><span style = "color:silver"> SoulSilver: </span> Extremely strong, it can change the landscape. It has an insolent nature that makes it not care about others.
-          <br><br>
-
-        </p>
 
         <br><br><br>
 
 
+				<div class = "form">
+					<span style = "color:black"> Shipping Type:</span><br>
 
-    </div>
+					<form name = "entireForm" action="customerBackend.php"  onsubmit="checkInput()" method="post">
+					<!-- <form name = "entireForm" onsubmit="checkInput()" > -->
+
+							<input type="radio" name="shipping" value = "Free 7 day"> Free 7 day<br>
+							<input type="radio" name="shipping" value = "$50.00 Overnight"> $50.00 Overnight<br>
+							<input type="radio" name="shipping" value = "$5.00 three day"> $5.00 three day<br>
+							<br><br><br>
+
+
+							Username:  <input type = "text" class = "username" id = "username"><br>
+							Password:&nbsp&nbsp<input type = "text" class = "password" id = "password"><br><br>
+
+
+
+							<input type="submit" value = "Submit"">
+								<br><br><br><br><br><br><br>
+					</form>
+
+					</div>
+
+					<script src="formChecker.js"></script>
 
 
 

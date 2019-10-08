@@ -6,44 +6,129 @@ p
     color: black;
 }
 
-p.aboutme
+p.formBody
 {
   color: black;
   margin-left: 2%;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 14pt;
+
 }
 
-
-h1.title
+p.inputBody
 {
-    color: green;
+
+  color: black;
+  margin-left: 17%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 14pt;
+  height: 0%;
+  width: auto;
+}
+
+div.charizardText
+{
+
+  color: black;
+  margin-left: 14.5%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 14pt;
+  height: 0%;
+  width: auto;
+}
+div.tyranitarText
+{
+  text-indent: 34%;
+
+  color: black;
+  margin-left: 17%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 14pt;
+  height: 0%;
+  width: auto;
+}div.heracrossText
+{
+  text-indent: 70%;
+
+  color: black;
+  margin-left: 17%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 14pt;
+  height: 0%;
+  width: auto;
+}
+
+div.shipping
+{
+  text-indent: 34%;
+
+  color: black;
+  margin-left: 17%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 14pt;
+  height: 0%;
+  width: auto;
+}
+
+h1.WebStoreTitle
+{
+    color: blue;
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 22pt;
     text-align: center;
-    width: auto;
-    width: auto\9;
+    /* width: auto; */
+    size: 20%;
 }
 
 img.charizard
 {
-  margin-left: 12%;
+  position: relative;
+  margin-left: 10%;
   max-width: 100%;
-  width: auto;
+  width: 20%;
+  height: auto;
+
+
 }
 
 img.tyranitar
 {
-  margin-left: 15%;
+  position: relative;
+
+  margin-left: 10%;
   max-width: 100%;
-  width: auto;
+  width: 20%;
+  height: auto;
+
 }
+
 
 img.heracross
 {
-  margin-left: 15%;
+  position: relative;
+
+  margin-left: 10%;
   max-width: 100%;
-  width: auto;
+  width: 20%;
+  height: auto;
+}
+
+input.charizardAmount
+{
+  margin-left: 1%;
+  width:8%;
+}
+
+input.tyranitarAmount
+{
+  margin-left: 28%;
+  width:8%;
+}
+
+input.heracrossAmount
+{
+  margin-left: 28%;
+  width:8%;
 }
 
 div.white
@@ -54,10 +139,21 @@ div.white
   margin-left: 10%;
   background-image: url(images/white.png);
     max-width: 100%;
-    height: 100%;
+    /* height: 100%; */
     width: 80%;
+}
 
-
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 body
